@@ -453,4 +453,7 @@ function New-Password {
 }
 
 Import-Module -Name Terminal-Icons
-oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\shawn.omp"  | Invoke-Expression
+
+'oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\shawn.omp.yaml"  | Invoke-Expression' | Out-File -LiteralPath $PROFILE -Append -Encoding utf8
+
+Clear-Host
